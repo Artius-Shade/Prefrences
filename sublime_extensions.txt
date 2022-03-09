@@ -1,6 +1,0 @@
-A File Icon
-BracketHighlighter
-Material Theme
-Package Control
-Sidebar
-Anaconda

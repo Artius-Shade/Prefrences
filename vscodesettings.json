@@ -5,17 +5,21 @@
     "workbench.settings.editor": "json",
     "workbench.settings.openDefaultSettings": true,
     "workbench.settings.useSplitJSON": true,
-    "python.defaultInterpreterPath": "/usr/bin/python3",
-    "editor.fontSize": 18,
-    "editor.fontWeight": "400",
-    "editor.fontFamily": "Ubuntu",
-    "debug.console.fontFamily": "Ubuntu",
-    "debug.console.fontSize": 18,
+    // Font Size ===============================
+    "editor.fontSize": 15,
+    "debug.console.fontSize": 15,
     "terminal.integrated.fontSize": 15,
+    // Font Weight ==============================
+    "editor.fontWeight": "500",
     "terminal.integrated.fontWeight": "549",
-    "window.zoomLevel": 0,
-    "terminal.integrated.fontFamily": "monospace",
+    // Font Family===============================
+    "terminal.integrated.fontFamily": "Source Code Pro",
+    "editor.fontFamily": "Source Code Pro",
+    "debug.console.fontFamily": "Source Code Pro",
     "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    // Code Runner===========================
     "code-runner.executorMap": {
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
@@ -71,10 +75,36 @@
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveFileBeforeRun": false,
     "code-runner.showExecutionMessage": false,
+    "code-runner.runInTerminal": true,
+    // LiveServer ====================================
+    "liveServer.settings.donotShowInfoMsg": true,
+    // GIT ===========================================
     "git.autofetch": true,
     "git.confirmSync": false,
-    "files.autoSave": "afterDelay",
-    "workbench.editorAssociations": {
-        "*.csv": "gc-excelviewer-csv-editor"
-    }
+    // Dart ==========================================
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.openDevTools": "flutter",
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    // python ==========================================
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    // cmake ===========================================
+    "cmake.configureOnOpen": true,
+    "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+    // java ============================================
+    "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
 }
